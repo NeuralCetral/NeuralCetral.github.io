@@ -1,1 +1,4 @@
-otniplens.com
+Type: CNAME
+Name: www
+Value: neuralcetral.github.io
+TTL: Default
