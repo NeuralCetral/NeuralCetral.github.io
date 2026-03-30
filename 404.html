@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>OtnipLens</title>
+    <script>
+      (function () {
+        const path = window.location.pathname
+        const query = window.location.search || ''
+        const hash = window.location.hash || ''
+        const redirectTarget =
+          window.location.origin +
+          '/?p=' +
+          encodeURIComponent(path) +
+          '&q=' +
+          encodeURIComponent(query + hash)
+
+        window.location.replace(redirectTarget)
+      })()
+    </script>
+  </head>
+  <body></body>
+</html>

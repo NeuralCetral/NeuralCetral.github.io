@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Source+Serif+4:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <!-- Google tag (gtag.js) -->
@@ -26,8 +26,19 @@
 
       gtag('config', 'G-XNHMZP1RZX');
     </script>
-    <script type="module" crossorigin src="/assets/index-BdXCvErQ.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CArVL10M.css">
+    <script>
+      (function () {
+        const params = new URLSearchParams(window.location.search)
+        const redirectedPath = params.get('p')
+
+        if (!redirectedPath) return
+
+        const restoredUrl = redirectedPath + (params.get('q') || '') + window.location.hash
+        window.history.replaceState(null, '', restoredUrl)
+      })()
+    </script>
+    <script type="module" crossorigin src="/assets/index-ZX4e0lwx.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BCuyt4NV.css">
   </head>
   <body>
     <div id="app"></div>
